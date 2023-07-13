@@ -69,7 +69,7 @@ class RestAssuredTest {
         System.out.println(response.getBody().asString());
     }
     @Test
-    void testUpdateUser() {
+    void testeAtualizarUsuario() {
         Response response = RestAssured.given()
                 .header("Content-Type", "application/json")
                 .body("{\"name\": \"morpheus\", \"job\": \"zion resident\"}")
